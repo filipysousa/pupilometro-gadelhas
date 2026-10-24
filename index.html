@@ -6,7 +6,23 @@
   <meta name="theme-color" content="#0b4d4b" />
   <meta name="description" content="Estimativa remota de distância pupilar para conferência com a Ótica Gadelhas." />
   <title>Pupilômetro Remoto | Ótica Gadelhas</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <style>
+:root{--pine:#0b4d4b;--pine2:#087a6e;--dark:#142c32;--muted:#5e7072;--gold:#e6ab53;--border:#dce7e3;--paper:#fafcfb;--white:#fff;--shadow:0 12px 38px rgba(8,47,46,.07);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--dark);background:#f6faf8}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-size:15px;line-height:1.55}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,label:focus-within{outline:3px solid #55bdad;outline-offset:3px}a{color:inherit}.hidden{display:none!important}.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.app-shell{max-width:1192px;padding:0 28px;margin:0 auto}.site-header{height:88px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--border)}.brand{text-decoration:none;display:flex;align-items:center;gap:13px}.brand-icon{display:grid;place-items:center;width:43px;height:43px;border-radius:14px;background:var(--pine);color:white;font-size:33px;line-height:1}.brand span:last-child{display:flex;flex-direction:column;line-height:1.15;gap:5px;letter-spacing:.04em}.brand strong{font-size:14px}.brand small{font-weight:500;color:#68807c;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.header-tag{background:#e3f3ec;border:1px solid #c4e3d9;border-radius:24px;padding:6px 12px;color:var(--pine);font-size:12px;font-weight:700}.hero{display:grid;grid-template-columns:1.5fr .9fr;gap:32px;min-height:350px;align-items:center;padding:54px 0 40px}.eyebrow,.section-label{font-size:11px;letter-spacing:.14em;font-weight:800;color:var(--pine2)}.eyebrow{display:inline-flex;align-items:center;gap:9px}.live-dot{height:8px;width:8px;border-radius:50%;background:#38ae85;box-shadow:0 0 0 4px #e2f5e9}.hero h1{font-size:clamp(35px,4.4vw,55px);letter-spacing:-.047em;line-height:1.1;max-width:740px;margin:19px 0 15px;font-weight:780}.hero h1 em{font-style:normal;color:var(--pine2)}.hero p{font-size:16px;color:var(--muted);max-width:650px;margin:0}.hero-points{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;color:#2e756c;font-size:12px;font-weight:700}.hero-points span{padding:7px 10px;border:1px solid #cfebe3;border-radius:8px;background:#f0f9f5}.hero-visual{position:relative;max-width:340px;min-height:230px;width:100%;justify-self:end;border-radius:26px;background:radial-gradient(circle at 40% 20%,#1c8880,#0a4e4b 64%,#083b3b);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:var(--shadow)}.face-abstract{position:relative;border:3px solid rgba(235,255,253,.7);width:147px;height:181px;border-radius:46% 46% 50% 50%;margin-top:-14px;transform:scale(1.06)}.face-abstract:after{content:'';width:3px;height:34px;background:rgba(236,255,255,.4);position:absolute;top:91px;left:69px;transform:rotate(3deg)}.eye{position:absolute;top:72px;width:16px;height:16px;background:#e5fff5;border-radius:50%;border:4px solid #2bb4a3}.eye.one{left:31px}.eye.two{right:31px}.measure-line{position:absolute;top:79px;height:1px;background:var(--gold);left:39px;right:39px;box-shadow:0 0 8px rgba(230,171,83,.9)}.measure-line:before,.measure-line:after{content:'';position:absolute;width:2px;height:12px;background:var(--gold);top:-5px}.measure-line:after{right:0}.middle-mark{position:absolute;height:7px;width:7px;top:75px;left:calc(50% - 3px);border-radius:50%;background:var(--gold)}.hero-visual-label{position:absolute;bottom:18px;left:19px;right:19px;padding:11px 15px;display:flex;gap:12px;align-items:center;background:#ffffff20;border:1px solid #ffffff3b;border-radius:12px;color:#fff;backdrop-filter:blur(5px)}.hero-visual-label strong{font-size:21px;color:#ffe2af}.hero-visual-label span{font-size:12px}.notice{border:1px solid #e5d6b2;background:#fff9eb;padding:16px 20px;border-radius:13px;color:#66542f;display:flex;align-items:flex-start;gap:20px}.notice strong{white-space:nowrap}.notice p{margin:0;font-size:13px}.progress{display:flex;align-items:center;max-width:670px;margin:35px auto;gap:12px}.progress-item{display:flex;align-items:center;gap:9px;color:#889996;white-space:nowrap;font-size:12px;font-weight:700}.progress-item b{display:grid;place-items:center;border-radius:50%;width:25px;height:25px;background:#e9efec;font-size:12px}.progress-item.active{color:var(--pine)}.progress-item.active b{background:var(--pine);color:white}.progress-item.done{color:#45927e}.progress-item.done b{background:#d2f5e5;color:#147757}.progress-divider{height:1px;background:#c8d8d3;flex:1}.main-grid{display:grid;grid-template-columns:minmax(0,1.17fr) minmax(330px,.83fr);align-items:start;gap:22px}.panel,.work-panel{background:#fff;border:1px solid var(--border);border-radius:18px;padding:30px;box-shadow:var(--shadow)}.panel h2,.work-title h2{font-size:26px;letter-spacing:-.035em;line-height:1.2;margin:8px 0 13px}.muted,.work-title p{color:var(--muted);font-size:14px}.guide-row{display:flex;align-items:flex-start;gap:18px;margin-top:20px}.guide-num{display:grid;place-items:center;min-width:38px;height:38px;border-radius:11px;background:#e8f5ef;color:var(--pine);font-weight:800;font-size:12px}.guide-row b{display:block;font-size:14px}.guide-row p{font-size:13px;color:var(--muted);margin:4px 0 0}.side-panel{padding:28px}.field-label{font-size:13px;font-weight:800;display:block;margin:19px 0 9px}.field-label span,.field-label small{font-weight:500;color:#7c9290}.side-panel input[type=text]{width:100%;padding:13px 14px;border:1px solid #cbded8;border-radius:10px;outline:none;background:#fcfefd}.side-panel input[type=text]:focus{border-color:#1f947d;box-shadow:0 0 0 3px #daf1e6}.choice-group{display:grid;gap:9px}.choice-card{display:flex;align-items:center;gap:10px;padding:13px;border:1px solid #d7e5dd;border-radius:11px;cursor:pointer}.choice-card:has(input:checked){border-color:#309c89;background:#f0faf5}.choice-card input{accent-color:var(--pine2);width:16px;height:16px;flex-shrink:0}.choice-card span{display:flex;flex-direction:column;line-height:1.3}.choice-card b{font-size:13px}.choice-card small{font-size:11px;color:#69817d;margin-top:4px}.consent{display:flex;align-items:flex-start;gap:11px;margin:23px 0 17px;font-size:12px;color:var(--muted);cursor:pointer}.consent input{accent-color:var(--pine);width:17px;height:17px;flex-shrink:0;margin:1px 0}.button{border:1px solid transparent;display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:11px;padding:13px 18px;font-weight:800;font-size:13px;text-decoration:none;transition:background .2s ease,transform .15s ease}.button:not(:disabled):active{transform:scale(.985)}.button-primary{background:var(--pine);color:#fff}.button-primary:hover:not(:disabled){background:#08766f}.button-outline{background:#fff;border-color:#bfd4ca;color:var(--pine)}.button-outline:hover:not(:disabled){background:#f0f7f4}.button-quiet{background:#edf3f0;color:#44645d}.button:disabled,.file-button[aria-disabled=true]{opacity:.48;cursor:not-allowed}.side-panel>.button,.file-button{width:100%}.or-separator{display:flex;align-items:center;gap:12px;color:#9aaba7;font-size:12px;margin:12px 0}.or-separator:before,.or-separator:after{content:'';height:1px;background:var(--border);flex:1}.quiet-text{font-size:11px;color:#81918d;margin:16px 0 0}.work-panel{margin:20px auto 30px;max-width:1040px}.work-title{margin-bottom:20px}.work-title h2{margin-bottom:5px}.camera-frame{background:#102a2a;position:relative;width:min(100%,650px);margin:auto;border-radius:16px;overflow:hidden;min-height:260px;display:flex;justify-content:center}.camera-frame video{width:100%;height:auto;max-height:68vh;object-fit:contain;display:block;transform:scaleX(-1)}.camera-outline{pointer-events:none;position:absolute;inset:0;display:grid;place-items:center}.camera-outline .oval{width:52%;height:76%;border:2px dashed rgba(255,255,255,.55);border-radius:48%}.action-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:23px}.small-status{border-radius:10px;background:#edf7f4;border:1px solid #d9ece6;color:#246d61;font-size:13px;padding:10px 13px;margin:15px 0}.small-status.warn{background:#fff8e7;border-color:#f0dcb5;color:#91671b}.editor-grid{display:grid;grid-template-columns:minmax(0,1fr) 244px;gap:24px}.editor-canvas-wrap{border:1px solid #d6e3dd;border-radius:12px;background:#122527;overflow:hidden;line-height:0;width:100%;user-select:none;touch-action:manipulation}.editor-canvas-wrap canvas{max-width:100%;width:100%;height:auto;cursor:crosshair;touch-action:manipulation}.photo-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11px;color:#607773;margin:10px 0}.photo-legend i{width:9px;height:9px;display:inline-block;border-radius:50%;margin-right:5px}.legend-eye{background:#0fd6bb}.legend-card{background:#e6ad54}.image-instruction{font-size:12px;color:#607773}.marking-side h3{margin:0 0 13px;font-size:15px}.marker-buttons{display:grid;gap:7px}.marker-button{border:1px solid #dae7e1;border-radius:9px;background:white;width:100%;padding:11px;text-align:left;font-size:12px;font-weight:700;display:flex;align-items:center;gap:5px}.marker-button[aria-pressed=true]{border-color:#179a85;background:#e9f7f1;box-shadow:0 0 0 1px #179a85}.marker-gold{color:#d79432}.marker-teal{color:#119d8a}.marker-state{margin-left:auto;color:#889b94;font-size:10px;font-weight:500}.fine-adjust{margin-top:15px;padding:12px;background:#f6faf8;border:1px solid #e1ebe6;border-radius:12px;text-align:center}.fine-adjust .field-label{margin:0 0 7px;text-align:left}.fine-adjust canvas{border:1px solid #dce8e1;background:#d5e3df;max-width:100%;border-radius:8px}.nudge-grid{margin:9px auto 0;display:grid;grid-template-columns:repeat(3,37px);grid-template-rows:repeat(3,31px);justify-content:center;gap:3px}.nudge{border:1px solid #cce0d7;background:#fff;color:#105e55;border-radius:6px;font-size:17px;line-height:1;padding:0}.nudge.center{color:#ac6e57;background:#fff4ee}.nudge:hover{background:#def5ea}.result-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:15px}.result-feature{background:linear-gradient(145deg,#0d6e64,#073c3c);border-radius:15px;color:#fff;padding:27px}.result-feature>span{font-size:14px;color:#d3f6ed;font-weight:600}.result-feature div{display:flex;align-items:baseline;gap:9px;margin:11px 0 4px}.result-feature strong{font-size:clamp(65px,9vw,93px);letter-spacing:-.07em;line-height:1;font-variant-numeric:tabular-nums}.result-feature small{font-size:23px;font-weight:700;color:#c6ebe5}.result-feature p{font-size:12px;color:#b9e3dc;margin:8px 0 0}.result-details{background:#f7faf8;border:1px solid #e2eeea;border-radius:15px;padding:21px}.result-details h3{margin:0 0 13px;font-size:15px}.result-details dl{display:grid;grid-template-columns:1fr 1.2fr;gap:9px 10px;font-size:12px;margin:0}.result-details dt{color:#667a76}.result-details dd{margin:0;font-weight:800;text-align:right}.disclaimer-mini{border-top:1px solid #d9e9e2;padding-top:12px;margin:15px 0 0;font-size:11px;color:#6d827e}.quality-box{margin-top:17px;padding:17px;background:#fff9eb;border:1px solid #eee0bd;border-radius:12px;color:#766038;font-size:13px}.quality-box p{margin:0 0 5px}.quality-box ul{margin:7px 0 0;padding-left:20px}.action-wrap{flex-wrap:wrap}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:1000;max-width:calc(100vw - 30px);padding:13px 22px;border-radius:12px;box-shadow:0 8px 25px #0003;background:#134c49;color:white;font-size:13px;font-weight:700}.site-footer{display:flex;justify-content:space-between;gap:22px;border-top:1px solid var(--border);padding:30px 0 45px;margin-top:50px}.site-footer>div{display:flex;flex-direction:column;gap:3px;min-width:190px}.site-footer b{letter-spacing:.06em;font-size:12px}.site-footer small{font-size:10px;color:#81928d}.site-footer p{max-width:590px;font-size:11px;color:#7c8f8a;margin:0}@media(max-width:850px){.hero{grid-template-columns:1fr .75fr;gap:20px}.hero-visual{min-height:210px}.main-grid{grid-template-columns:1fr}.editor-grid{grid-template-columns:minmax(0,1fr) 215px}.panel{padding:25px}}@media(max-width:620px){.app-shell{padding:0 16px}.site-header{height:72px}.header-tag{font-size:9px;padding:5px 7px}.brand-icon{width:37px;height:37px;font-size:27px}.brand strong{font-size:11px}.brand small{font-size:8px}.hero{display:block;padding:30px 0 25px;min-height:auto}.hero h1{font-size:36px}.hero p{font-size:14px}.hero-visual{display:none}.hero-points{gap:7px;margin-top:19px}.hero-points span{font-size:10px;padding:5px 7px}.notice{display:block;padding:14px}.notice strong{display:block;margin-bottom:4px}.notice p{font-size:12px}.progress{gap:5px;margin:23px auto}.progress-item{font-size:10px;gap:4px}.progress-item b{height:20px;width:20px;font-size:10px}.panel,.work-panel{padding:18px;border-radius:14px}.panel h2,.work-title h2{font-size:23px}.editor-grid,.result-grid{grid-template-columns:1fr}.marking-side{padding-top:5px}.marker-buttons{grid-template-columns:1fr 1fr}.marker-button{font-size:11px;padding:10px 7px;flex-wrap:wrap}.marker-state{font-size:9px}.fine-adjust{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:10px}.fine-adjust .field-label{grid-column:1/-1}.fine-adjust canvas{width:100%;height:auto}.nudge-grid{margin:0 auto}.action-row{flex-wrap:wrap}.action-row .button{flex:1;min-width:140px}.action-wrap .button{flex:1 1 100%}.site-footer{display:block}.site-footer p{margin-top:13px}.result-feature strong{font-size:75px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Versão 2.0 — DP binocular e DNP direita/esquerda */
+.field-select,.side-panel input[type=number]{width:100%;border:1px solid #cbded8;border-radius:10px;padding:12px 13px;background:#fcfefd;color:var(--dark);font:inherit}
+.field-select:focus-visible,.side-panel input[type=number]:focus-visible{outline:3px solid #55bdad;outline-offset:2px}
+.marker-violet{color:#9f56ce}.legend-nose{background:#c98eea}
+.mono-results{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mono-results>div{display:flex;flex-direction:column;gap:3px;border:1px solid #bfe7de;background:#e9f8f1;border-radius:12px;padding:16px}
+.mono-results span{font-size:12px;font-weight:800;color:#0a5953}
+.mono-results strong{font-size:clamp(31px,5vw,43px);line-height:1;letter-spacing:-.05em;font-variant-numeric:tabular-nums;color:var(--pine)}
+.mono-results small{font-size:12px;color:#537a73}
+.result-grid{grid-template-columns:1fr 1.1fr 1.2fr}
+@media (max-width:980px){.result-grid{grid-template-columns:1fr 1fr}.result-grid>.result-details:last-child{grid-column:1/-1}}
+@media (max-width:620px){.result-grid{grid-template-columns:1fr}.result-grid>.result-details:last-child{grid-column:auto}.mono-results strong{font-size:40px}.marker-button[data-marker="nose"]{grid-column:1/-1}}
+
+</style>
 </head>
 <body>
   <div class="app-shell">
@@ -22,8 +38,8 @@
       <section class="hero" id="inicio">
         <div class="hero-copy">
           <span class="eyebrow"><span class="live-dot"></span> Atendimento a distância</span>
-          <h1>Vamos estimar sua <em>distância pupilar?</em></h1>
-          <p>Com uma foto e um cartão de tamanho padrão, você pode preparar uma medida preliminar para enviar à nossa equipe.</p>
+          <h1>Estime a <em>DP e a DNP</em> de cada olho</h1>
+          <p>Com uma foto e um cartão padrão ou régua, obtenha uma estimativa da distância pupilar total (DP) e das distâncias nasopupilares direita e esquerda (DNP).</p>
           <div class="hero-points"><span>✓ Pelo celular</span><span>✓ Sem instalar aplicativo</span><span>✓ Foto processada no aparelho</span></div>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -49,11 +65,11 @@
         <div class="panel panel-primary">
           <span class="section-label">ETAPA 01</span>
           <h2>Prepare sua foto</h2>
-          <p class="muted">Você vai precisar de um cartão com tamanho padrão, como um cartão de plástico em branco, no formato bancário (largura de <b>85,60 mm</b>). <b>Não fotografe números, códigos ou outros dados de cartões de pagamento.</b></p>
+          <p class="muted">Use <b>um cartão padrão de 85,60 mm</b> (sem dados expostos) ou <b>uma régua</b>. Se usar régua, escolha duas marcas separadas por uma distância <b>real e conhecida</b> (ex.: 0 e 50 mm). Não use automaticamente 85,60 mm para uma régua.</p>
           <div class="guide-row"><span class="guide-num">01</span><div><b>Peça ajuda, se possível</b><p>Para lentes de longe, outra pessoa deve fotografar você de frente, na altura dos olhos, a cerca de 1,5 a 2 metros, com boa iluminação.</p></div></div>
           <div class="guide-row"><span class="guide-num">02</span><div><b>Deixe o rosto reto</b><p>Olhe em direção à câmera, sem inclinar a cabeça e sem óculos escuros. Evite filtros de beleza e retrato.</p></div></div>
-          <div class="guide-row"><span class="guide-num">03</span><div><b>Posicione o cartão</b><p>Segure o cartão <b>horizontalmente, sobre a testa, bem próximo ao plano dos olhos</b>, sem tampar os olhos. A borda maior precisa aparecer inteira.</p></div></div>
-          <div class="guide-row"><span class="guide-num">04</span><div><b>Marque na imagem</b><p>Confirme os centros das duas pupilas e toque nas duas extremidades da <b>mesma borda longa</b> do cartão.</p></div></div>
+          <div class="guide-row"><span class="guide-num">03</span><div><b>Posicione a referência</b><p>Segure o cartão ou a régua <b>horizontalmente, perto do plano dos olhos</b>, sem tapá-los. A régua deve mostrar claramente as duas marcas escolhidas. Evite segurá-la à frente do nariz.</p></div></div>
+          <div class="guide-row"><span class="guide-num">04</span><div><b>Marque os cinco pontos</b><p>Confirme as duas pupilas, o <b>centro da raiz do nariz</b> e as duas extremidades da referência. Verifique também em qual lado da foto aparece o olho direito do cliente.</p></div></div>
         </div>
 
         <aside class="panel side-panel">
@@ -65,6 +81,16 @@
           <div class="choice-group" role="radiogroup" aria-label="Tipo de fotografia">
             <label class="choice-card"><input type="radio" name="photoMode" value="distance" checked /><span><b>Com ajuda de outra pessoa</b><small>Recomendado para estimativa de DP de longe</small></span></label>
             <label class="choice-card"><input type="radio" name="photoMode" value="selfie" /><span><b>Selfie, com o braço esticado</b><small>Medida com convergência para perto; não equivale à DP de longe</small></span></label>
+          </div>
+          <div class="field-label">Qual referência você vai usar?</div>
+          <div class="choice-group" role="radiogroup" aria-label="Referência para calibrar a escala">
+            <label class="choice-card"><input type="radio" name="referenceMode" value="card" checked /><span><b>Cartão de tamanho padrão</b><small>Comprimento da borda maior: 85,60 mm</small></span></label>
+            <label class="choice-card"><input type="radio" name="referenceMode" value="ruler" /><span><b>Régua milimetrada</b><small>Marcar dois traços com distância conhecida</small></span></label>
+          </div>
+          <div id="rulerSizeRow" class="hidden">
+            <label class="field-label" for="rulerDistance">Distância REAL entre as marcas escolhidas (mm)</label>
+            <input id="rulerDistance" type="number" inputmode="decimal" min="10" max="150" step="0.5" value="50" />
+            <p class="quiet-text">Exemplo: marque 0 e 50 mm na régua e deixe 50 aqui. A distância informada deve corresponder exatamente aos dois pontos dourados da foto.</p>
           </div>
           <label class="consent"><input id="consent" type="checkbox" /><span>Entendo que é uma estimativa, autorizo o processamento local da foto e decidirei se quero compartilhar o resultado.</span></label>
           <button id="startCamera" class="button button-primary" disabled><span aria-hidden="true">◉</span> Abrir câmera</button>
@@ -82,22 +108,29 @@
       </section>
 
       <section class="work-panel hidden" id="editorSection">
-        <div class="work-title"><span class="section-label">ETAPA 02</span><h2>Confira os pontos da imagem</h2><p>O detector tenta localizar as pupilas automaticamente. Para medir, marque também as duas pontas da <b>borda longa (85,60 mm)</b> do cartão.</p></div>
+        <div class="work-title"><span class="section-label">ETAPA 02</span><h2>Confira os cinco pontos</h2><p>Marque as duas pupilas, o <b>centro da raiz nasal entre os olhos</b> e as duas marcas que delimitam a distância real da referência escolhida. A posição nasal é uma aproximação a ser revisada.</p></div>
         <div id="modelStatus" class="small-status" role="status" aria-live="polite">Preparando análise...</div>
         <div class="editor-grid">
           <div>
             <div class="editor-canvas-wrap"><canvas id="photoCanvas" aria-label="Imagem da foto com as marcações. Toque para posicionar o ponto selecionado."></canvas></div>
-            <div class="photo-legend"><span><i class="legend-eye"></i> Centros das pupilas</span><span><i class="legend-card"></i> Bordas do cartão</span></div>
+            <div class="photo-legend"><span><i class="legend-eye"></i> Pupilas</span><span><i class="legend-nose"></i> Centro nasal</span><span><i class="legend-card"></i> Marcas da referência</span></div>
             <p class="image-instruction">Toque na imagem para colocar o ponto selecionado. Use as setas para corrigir com precisão.</p>
           </div>
           <div class="marking-side">
             <h3>Selecione o ponto</h3>
             <div class="marker-buttons">
-              <button type="button" class="marker-button" data-marker="cardA"><span class="marker-gold">●</span> Cartão: ponta 1 <span class="marker-state" id="status-cardA">Pendente</span></button>
-              <button type="button" class="marker-button" data-marker="cardB"><span class="marker-gold">●</span> Cartão: ponta 2 <span class="marker-state" id="status-cardB">Pendente</span></button>
+              <button type="button" class="marker-button" data-marker="cardA"><span class="marker-gold">●</span> Referência: ponto 1 <span class="marker-state" id="status-cardA">Pendente</span></button>
+              <button type="button" class="marker-button" data-marker="cardB"><span class="marker-gold">●</span> Referência: ponto 2 <span class="marker-state" id="status-cardB">Pendente</span></button>
               <button type="button" class="marker-button" data-marker="eyeA"><span class="marker-teal">●</span> Pupila 1 <span class="marker-state" id="status-eyeA">Pendente</span></button>
               <button type="button" class="marker-button" data-marker="eyeB"><span class="marker-teal">●</span> Pupila 2 <span class="marker-state" id="status-eyeB">Pendente</span></button>
+              <button type="button" class="marker-button" data-marker="nose"><span class="marker-violet">●</span> Centro da raiz do nariz <span class="marker-state" id="status-nose">Pendente</span></button>
             </div>
+            <label class="field-label" for="rightEyeSide">Na foto, onde está o olho direito (OD) do cliente?</label>
+            <select id="rightEyeSide" class="field-select">
+              <option value="left">À esquerda da imagem (foto normal)</option>
+              <option value="right">À direita da imagem (foto espelhada)</option>
+            </select>
+            <p class="quiet-text">Em fotos normais de frente, OD aparece à esquerda da imagem. Em selfies espelhadas, pode ser o contrário. Confirme antes de compartilhar.</p>
             <div class="fine-adjust">
               <span class="field-label">Ajuste fino <small>(1 px por toque)</small></span>
               <canvas id="loupeCanvas" width="170" height="112" aria-label="Ampliação do ponto selecionado"></canvas>
@@ -105,14 +138,21 @@
             </div>
           </div>
         </div>
-        <div class="action-row"><button class="button button-primary" id="calculate" disabled>Calcular DP estimada <span aria-hidden="true">→</span></button><button class="button button-outline" id="tryAgain">Escolher outra foto</button></div>
+        <div class="action-row"><button class="button button-primary" id="calculate" disabled>Calcular DP e DNP estimadas <span aria-hidden="true">→</span></button><button class="button button-outline" id="tryAgain">Escolher outra foto</button></div>
       </section>
 
       <section class="work-panel hidden" id="resultSection">
         <div class="work-title"><span class="section-label">ETAPA 03</span><h2>Resultado preliminar</h2><p>Confira os números e encaminhe à ótica para revisão.</p></div>
         <div class="result-grid">
           <div class="result-feature"><span>DP binocular estimada</span><div><strong id="pdValue">--</strong><small>mm</small></div><p id="modeDescription">Medida preliminar</p></div>
-          <div class="result-details"><h3>Detalhes da medição</h3><dl><dt>Referência</dt><dd>Cartão padrão, 85,60 mm</dd><dt>Tipo de captura</dt><dd id="resultMode">—</dd><dt>Localização das pupilas</dt><dd id="resultDetection">—</dd><dt>Data</dt><dd id="resultDate">—</dd></dl><p class="disclaimer-mini">A DP monocular, altura de montagem e outras medidas para fabricar as lentes não são obtidas por este protótipo.</p></div>
+          <div class="result-details"><h3>DNP — distâncias nasopupilares</h3>
+            <div class="mono-results">
+              <div><span>Direita (OD)</span><strong id="dnpRightValue">--</strong><small>mm</small></div>
+              <div><span>Esquerda (OE)</span><strong id="dnpLeftValue">--</strong><small>mm</small></div>
+            </div>
+            <p class="disclaimer-mini">DNP estimadas pela posição da linha central nasal marcada na foto. Não é equivalente a uma medida profissional validada.</p>
+          </div>
+          <div class="result-details"><h3>Detalhes da medição</h3><dl><dt>Referência</dt><dd id="resultReference">—</dd><dt>Tipo de captura</dt><dd id="resultMode">—</dd><dt>Localização das pupilas</dt><dd id="resultDetection">—</dd><dt>Data</dt><dd id="resultDate">—</dd></dl><p class="disclaimer-mini">A DP e as DNPs estimadas não substituem medidas de centragem, altura de montagem e a conferência profissional antes de fabricar lentes.</p></div>
         </div>
         <div class="quality-box" id="qualityBox"></div>
         <div class="action-row action-wrap"><button class="button button-primary" id="shareResult">Compartilhar com a ótica</button><button class="button button-outline" id="waResult">Enviar texto pelo WhatsApp</button><button class="button button-outline" id="downloadPhoto">Baixar imagem marcada</button><button class="button button-outline" id="copyResult">Copiar resultado</button><button class="button button-quiet" id="backToEditor">Corrigir os pontos</button></div>
@@ -121,6 +161,415 @@
     </main>
     <footer class="site-footer"><div><b>ÓTICA GADELHAS</b><small>Pupilômetro remoto • Protótipo experimental</small></div><p>Privacidade: a foto é analisada neste dispositivo; o aplicativo não possui servidor de armazenamento. Só é compartilhada se você escolher fazê-lo.</p></footer>
   </div>
-  <script defer src="./app.js"></script>
+  <script>
+/**
+ * Ótica Gadelhas — Pupilômetro Remoto (protótipo).
+ * Nenhuma foto é enviada a servidor por este código. O runtime do MediaPipe
+ * é carregado da CDN e o modelo de landmarks do Google, quando disponível.
+ * As medidas são estimativas NÃO validadas para fabricação de óculos.
+ */
+const $ = (id) => document.getElementById(id);
+const SECTIONS = {intro:$('introSection'),camera:$('cameraSection'),editor:$('editorSection'),result:$('resultSection')};
+const source = document.createElement('canvas');
+const photo = $('photoCanvas');
+const ctx = photo.getContext('2d');
+const sourceCtx = source.getContext('2d', {willReadFrequently: true});
+const loupe = $('loupeCanvas');
+const loupeCtx = loupe.getContext('2d');
+const KEYS = ['cardA','cardB','eyeA','eyeB','nose'];
+const CARD_WIDTH_MM = 85.60;
+const MODEL_URL = 'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task';
+const MP_VERSION = '0.10.22';
+let stream = null;
+let model = null;
+let modelPromise = null;
+let activeMarker = 'cardA';
+let markers = {cardA:null,cardB:null,eyeA:null,eyeB:null,nose:null};
+let detection = 'manual';
+let lastMeasurement = null;
+let cameraFront = true;
+let toastHandle = null;
+
+function showToast(msg){
+  clearTimeout(toastHandle); const e=$('alertBox'); e.textContent=msg; e.classList.remove('hidden');
+  toastHandle=setTimeout(()=>e.classList.add('hidden'),4800);
+}
+function showSection(name){
+  Object.entries(SECTIONS).forEach(([key,node])=>node.classList.toggle('hidden',name!==key));
+  const steps={intro:1,camera:2,editor:2,result:3};
+  const n=steps[name];
+  for(let k=1;k<=3;k++){
+    const el=$('step'+k);el.classList.toggle('active',k===n);el.classList.toggle('done',k<n);
+  }
+  (name==='intro' ? $('inicio') : SECTIONS[name]).scrollIntoView({behavior:'smooth',block:'start'});
+}
+function photoMode(){return document.querySelector('input[name="photoMode"]:checked').value;}
+function referenceMode(){return document.querySelector('input[name="referenceMode"]:checked').value;}
+function referenceWidth(){
+  if(referenceMode()==='card')return CARD_WIDTH_MM;
+  const mm=Number(String($('rulerDistance').value).replace(',','.'));
+  if(!Number.isFinite(mm)||mm<10||mm>150)throw new Error('Informe a distância REAL da régua (10 a 150 mm).');
+  return mm;
+}
+function syncReferenceMode(){$('rulerSizeRow').classList.toggle('hidden',referenceMode()!=='ruler');}
+document.querySelectorAll('input[name="referenceMode"]').forEach(node=>node.addEventListener('change',syncReferenceMode));
+syncReferenceMode();
+function canUseImage(){return $('consent').checked;}
+function syncConsent(){
+  const okay=canUseImage(); $('startCamera').disabled=!okay;
+  $('fileInput').disabled=!okay; $('uploadLabel').setAttribute('aria-disabled',String(!okay));
+}
+$('consent').addEventListener('change',syncConsent);
+$('uploadLabel').addEventListener('click',(e)=>{
+  if(!canUseImage()){e.preventDefault();showToast('Marque o consentimento para continuar.');}
+});
+
+async function startCamera(){
+  if(!canUseImage())return;
+  if(!navigator.mediaDevices?.getUserMedia){
+    showToast('Este navegador não permite câmera. Escolha uma foto da galeria.');return;
+  }
+  try{
+    await stopCamera();
+    // O usuário pode pedir outra pessoa para capturar, logo preferimos a câmera traseira.
+    cameraFront = photoMode()==='selfie';
+    const facingMode = cameraFront ? 'user':'environment';
+    try{
+      stream=await navigator.mediaDevices.getUserMedia({audio:false,video:{facingMode:{ideal:facingMode},width:{ideal:1920},height:{ideal:1080}}});
+    }catch(_){stream=await navigator.mediaDevices.getUserMedia({audio:false,video:true});}
+    const video=$('cameraVideo');
+    video.srcObject=stream;
+    video.style.transform=cameraFront?'scaleX(-1)':'none';
+    await video.play();
+    showSection('camera');
+  }catch(err){
+    console.warn('Câmera indisponível:',err);
+    showToast('Não foi possível abrir a câmera. Verifique a permissão e o HTTPS ou envie uma foto da galeria.');
+  }
+}
+async function stopCamera(){
+  if(stream){stream.getTracks().forEach(track=>track.stop());stream=null;}
+  $('cameraVideo').srcObject=null;
+}
+$('startCamera').addEventListener('click',startCamera);
+$('stopCamera').addEventListener('click',async()=>{await stopCamera();showSection('intro');});
+$('takePhoto').addEventListener('click', async()=>{
+  const video=$('cameraVideo');
+  if(!video.videoWidth||!video.videoHeight){showToast('A câmera ainda está iniciando.');return;}
+  setPhotoSize(video.videoWidth,video.videoHeight);
+  sourceCtx.save();
+  if(cameraFront){sourceCtx.translate(source.width,0);sourceCtx.scale(-1,1);}
+  sourceCtx.drawImage(video,0,0,source.width,source.height);
+  sourceCtx.restore();
+  await stopCamera();
+  prepareEditor();
+});
+function setPhotoSize(width,height){
+  const maxDim=1920;
+  const scale=Math.min(1,maxDim/Math.max(width,height));
+  source.width=Math.round(width*scale);source.height=Math.round(height*scale);
+  photo.width=source.width;photo.height=source.height;
+}
+$('fileInput').addEventListener('change',(event)=>{
+  const file=event.target.files?.[0];
+  if(!file || !canUseImage())return;
+  if(file.size>24*1024*1024){showToast('Arquivo muito grande. Use uma imagem de até 24 MB.');return;}
+  const url=URL.createObjectURL(file);
+  const img=new Image();
+  img.onload=()=>{
+    setPhotoSize(img.naturalWidth,img.naturalHeight);
+    sourceCtx.drawImage(img,0,0,source.width,source.height);
+    URL.revokeObjectURL(url);
+    prepareEditor();
+    event.target.value='';
+  };
+  img.onerror=()=>{
+    URL.revokeObjectURL(url);
+    showToast('Não foi possível ler esta imagem. Tente JPG ou PNG.');
+  };
+  img.src=url;
+});
+
+function prepareEditor(){
+  markers={cardA:null,cardB:null,eyeA:null,eyeB:null,nose:null};
+  detection='manual';lastMeasurement=null;
+  activeMarker='cardA';
+  $('rightEyeSide').value=photoMode()==='selfie'?'right':'left';
+  $('modelStatus').textContent='Tentando localizar as pupilas...';
+  $('modelStatus').classList.remove('warn');
+  showSection('editor');
+  drawPhoto();syncMarkerButtons();
+  detectEyeCenters();
+}
+
+async function initModel(){
+  if(model)return model;
+  if(modelPromise)return modelPromise;
+  modelPromise=(async()=>{
+    const {FaceLandmarker,FilesetResolver}=await import(`https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@${MP_VERSION}/vision_bundle.mjs`);
+    const vision=await FilesetResolver.forVisionTasks(`https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@${MP_VERSION}/wasm`);
+    model=await FaceLandmarker.createFromOptions(vision,{
+      baseOptions:{modelAssetPath:MODEL_URL,delegate:'CPU'},
+      runningMode:'IMAGE',numFaces:1,
+      minFaceDetectionConfidence:0.45,
+      minFacePresenceConfidence:0.45
+    });
+    return model;
+  })();
+  try{return await modelPromise;}catch(err){modelPromise=null;throw err;}
+}
+
+async function detectEyeCenters(){
+  const snap=source.toDataURL('image/jpeg',0.3); // Usado apenas para descartar resultados de foto anterior.
+  try{
+    const landmarker=await initModel();
+    if(source.toDataURL('image/jpeg',0.3)!==snap)return;
+    const result=landmarker.detect(source);
+    const face=result.faceLandmarks?.[0];
+    if(!face || face.length<478)throw new Error('Pupilas não reconhecidas nesta imagem.');
+    // Centro de cada íris de acordo com o mapeamento oficial do MediaPipe.
+    const iris1=face[468];const iris2=face[473];
+    const a={x:iris1.x*source.width,y:iris1.y*source.height};
+    const b={x:iris2.x*source.width,y:iris2.y*source.height};
+    if(!validPoint(a)||!validPoint(b))throw new Error('Pontos das pupilas fora da foto.');
+    if(distance(a,b)<28)throw new Error('Rosto muito pequeno para uma estimativa.');
+    // Mantemos a ordenação visual simples: pupila 1 à esquerda da foto.
+    [markers.eyeA,markers.eyeB]=a.x<=b.x?[a,b]:[b,a];
+    const bridge=face[168]; // Região da raiz nasal; apenas sugestão automática para revisão manual.
+    if(bridge){
+      const mid={x:bridge.x*source.width,y:bridge.y*source.height};
+      if(validPoint(mid))markers.nose=mid;
+    }
+    detection='automatica';
+    $('modelStatus').textContent='✓ Pupilas detectadas e centro nasal sugerido. Confira os pontos verdes e roxo; marque as duas extremidades da referência.';
+    $('modelStatus').classList.remove('warn');
+    drawPhoto();syncMarkerButtons();
+  }catch(err){
+    console.warn('Detecção automática indisponível:',err);
+    $('modelStatus').textContent='Detecção automática não disponível nesta foto. Você pode marcar os dois centros das pupilas manualmente.';
+    $('modelStatus').classList.add('warn');
+    syncMarkerButtons();
+  }
+}
+function validPoint(p){return Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=0&&p.x<=source.width&&p.y>=0&&p.y<=source.height;}
+function distance(a,b){return Math.hypot(a.x-b.x,a.y-b.y);}
+function setActiveMarker(key){activeMarker=key;syncMarkerButtons();drawPhoto();}
+function syncMarkerButtons(){
+  document.querySelectorAll('.marker-button').forEach(button=>{
+    const key=button.dataset.marker;
+    button.setAttribute('aria-pressed',String(key===activeMarker));
+    const s=$('status-'+key);
+    s.textContent=markers[key]?'✓ Marcado':'Pendente';
+    s.style.color=markers[key]?'#087b65':'';
+  });
+  $('calculate').disabled=!KEYS.every(k=>markers[k]);
+  drawLoupe();
+}
+document.querySelectorAll('.marker-button').forEach(button=>button.addEventListener('click',()=>setActiveMarker(button.dataset.marker)));
+photo.addEventListener('pointerdown',(e)=>{
+  if(!source.width)return;
+  e.preventDefault();
+  const rect=photo.getBoundingClientRect();
+  const x=(e.clientX-rect.left)*photo.width/rect.width;
+  const y=(e.clientY-rect.top)*photo.height/rect.height;
+  markers[activeMarker]={x:Math.max(0,Math.min(source.width,x)),y:Math.max(0,Math.min(source.height,y))};
+  if(activeMarker==='eyeA'||activeMarker==='eyeB'||activeMarker==='nose')detection='conferida/manual';
+  drawPhoto();syncMarkerButtons();
+  const next=KEYS.find(k=>!markers[k]);
+  if(next)setActiveMarker(next);
+});
+document.querySelectorAll('.nudge').forEach(button=>button.addEventListener('click',()=>{
+  if(!markers[activeMarker]){showToast('Primeiro coloque o ponto na foto.');return;}
+  markers[activeMarker].x=Math.max(0,Math.min(source.width,markers[activeMarker].x+Number(button.dataset.dx)));
+  markers[activeMarker].y=Math.max(0,Math.min(source.height,markers[activeMarker].y+Number(button.dataset.dy)));
+  if(activeMarker==='eyeA'||activeMarker==='eyeB'||activeMarker==='nose')detection='conferida/manual';
+  drawPhoto();drawLoupe();
+}));
+$('clearMarker').addEventListener('click',()=>{
+  markers[activeMarker]=null;
+  if(activeMarker==='eyeA'||activeMarker==='eyeB'||activeMarker==='nose')detection='conferida/manual';
+  drawPhoto();syncMarkerButtons();
+});
+
+function drawPhoto(){
+  if(!source.width)return;
+  ctx.clearRect(0,0,photo.width,photo.height);
+  ctx.drawImage(source,0,0);
+  const size=Math.max(3,Math.min(photo.width,photo.height)/220);
+  ctx.lineWidth=size*1.7;ctx.lineCap='round';ctx.lineJoin='round';
+  const c1=markers.cardA,c2=markers.cardB;
+  const e1=markers.eyeA,e2=markers.eyeB,bridge=markers.nose;
+  if(c1&&c2){ctx.strokeStyle='#ffd38e';ctx.beginPath();ctx.moveTo(c1.x,c1.y);ctx.lineTo(c2.x,c2.y);ctx.stroke();}
+  if(e1&&e2){
+    ctx.strokeStyle='#11dfb9';ctx.setLineDash([size*3,size*2]);ctx.beginPath();ctx.moveTo(e1.x,e1.y);ctx.lineTo(e2.x,e2.y);ctx.stroke();ctx.setLineDash([]);
+  }
+  if(e1&&e2&&bridge){
+    const left=e1.x<e2.x?e1:e2,right=e1.x<e2.x?e2:e1;
+    const len=distance(left,right),ux=(right.x-left.x)/len,uy=(right.y-left.y)/len;
+    const t=(bridge.x-left.x)*ux+(bridge.y-left.y)*uy;
+    const projection={x:left.x+t*ux,y:left.y+t*uy};
+    ctx.strokeStyle='#e0a8ff';ctx.lineWidth=size;ctx.setLineDash([size*2,size*2]);
+    ctx.beginPath();ctx.moveTo(bridge.x,bridge.y);ctx.lineTo(projection.x,projection.y);ctx.stroke();ctx.setLineDash([]);
+  }
+  KEYS.forEach((k,index)=>{
+    const p=markers[k];if(!p)return;
+    const color=k==='nose'?'#e0a8ff':k.startsWith('card')?'#ffc66c':'#00ddbf';
+    ctx.beginPath();ctx.fillStyle='#032c2bc9';ctx.arc(p.x,p.y,size*4.1,0,Math.PI*2);ctx.fill();
+    ctx.strokeStyle=color;ctx.lineWidth=size*1.2;ctx.stroke();
+    ctx.beginPath();ctx.arc(p.x,p.y,size*.8,0,Math.PI*2);ctx.fillStyle=color;ctx.fill();
+    ctx.lineWidth=size*.8;
+    if(k===activeMarker){ctx.beginPath();ctx.strokeStyle='#fff';ctx.arc(p.x,p.y,size*6.1,0,Math.PI*2);ctx.stroke();}
+    const txt=k==='nose'?'N':k.startsWith('card')?(k==='cardA'?'R1':'R2'):(k==='eyeA'?'P1':'P2');
+    ctx.font=`bold ${Math.max(13,size*4)}px Arial`;
+    ctx.textBaseline='middle';
+    ctx.fillStyle='#002c2b';
+    ctx.fillText(txt,p.x+size*6+1,p.y+1);
+    ctx.fillStyle=color;
+    ctx.fillText(txt,p.x+size*6,p.y);
+  });
+}
+function drawLoupe(){
+  loupeCtx.clearRect(0,0,loupe.width,loupe.height);
+  loupeCtx.fillStyle='#daeae4';loupeCtx.fillRect(0,0,loupe.width,loupe.height);
+  const p=markers[activeMarker];
+  if(!p||!source.width){
+    loupeCtx.fillStyle='#53706c';loupeCtx.font='12px Arial';loupeCtx.textAlign='center';
+    loupeCtx.fillText('Selecione um ponto',loupe.width/2,57);return;
+  }
+  const sx=32,sy=21;
+  loupeCtx.imageSmoothingEnabled=false;
+  loupeCtx.drawImage(source,p.x-sx,p.y-sy,sx*2,sy*2,0,0,loupe.width,loupe.height);
+  loupeCtx.imageSmoothingEnabled=true;
+  const cx=loupe.width/2,cy=loupe.height/2;
+  loupeCtx.strokeStyle='#fff';loupeCtx.lineWidth=3;
+  loupeCtx.beginPath();loupeCtx.moveTo(cx-14,cy);loupeCtx.lineTo(cx+14,cy);loupeCtx.moveTo(cx,cy-14);loupeCtx.lineTo(cx,cy+14);loupeCtx.stroke();
+  loupeCtx.strokeStyle='#009e8a';loupeCtx.lineWidth=1.5;loupeCtx.strokeRect(cx-4,cy-4,8,8);
+}
+
+function measure(){
+  if(!KEYS.every(k=>markers[k]))throw new Error('É necessário conferir os cinco pontos: pupilas, nariz e referência.');
+  const realWidth=referenceWidth();
+  const pixelRef=distance(markers.cardA,markers.cardB);
+  const pixelEye=distance(markers.eyeA,markers.eyeB);
+  if(pixelRef<40)throw new Error('A referência está pequena. Use uma foto mais nítida e com mais resolução.');
+  if(pixelEye<25)throw new Error('O rosto está muito pequeno nesta foto.');
+  if(pixelRef>source.width*0.96)throw new Error('Confira os dois pontos da referência.');
+  const scale=realWidth/pixelRef;
+  const pd=pixelEye*scale;
+  if(!Number.isFinite(pd)||pd<20||pd>115)throw new Error('DP fora de uma faixa plausível. Revise a escala, as marcas da régua/cartão e as pupilas.');
+  // A linha nasal não deve ser assumida como metade da distância pupilar:
+  // projetamos a raiz nasal indicada sobre o eixo entre as duas pupilas.
+  const [imLeft,imRight]=[markers.eyeA,markers.eyeB].sort((a,b)=>a.x-b.x);
+  const ux=(imRight.x-imLeft.x)/pixelEye;
+  const uy=(imRight.y-imLeft.y)/pixelEye;
+  const nasalPosition=(markers.nose.x-imLeft.x)*ux+(markers.nose.y-imLeft.y)*uy;
+  if(nasalPosition<=pixelEye*0.15||nasalPosition>=pixelEye*0.85)
+    throw new Error('O centro nasal deve estar entre as duas pupilas. Confira o ponto roxo.');
+  const imLeftDnp=nasalPosition*scale;
+  const imRightDnp=(pixelEye-nasalPosition)*scale;
+  const odLeftSide=$('rightEyeSide').value==='left';
+  const dnpRight=odLeftSide?imLeftDnp:imRightDnp;
+  const dnpLeft=odLeftSide?imRightDnp:imLeftDnp;
+  const roll=Math.atan2(Math.abs(markers.eyeB.y-markers.eyeA.y),Math.abs(markers.eyeB.x-markers.eyeA.x))*180/Math.PI;
+  const refAngle=Math.atan2(Math.abs(markers.cardB.y-markers.cardA.y),Math.abs(markers.cardB.x-markers.cardA.x))*180/Math.PI;
+  const eyeMidY=(markers.eyeA.y+markers.eyeB.y)/2;
+  const refMidY=(markers.cardA.y+markers.cardB.y)/2;
+  const warnings=[];
+  if(photoMode()==='selfie')warnings.push('Selfie: a convergência para perto altera a distância pupilar. Não use como DP de longe.');
+  if(roll>7)warnings.push('A linha entre as pupilas está inclinada. Refaça a foto com a cabeça reta.');
+  if(refAngle>12)warnings.push('A referência está inclinada. Segure-a horizontalmente e na mesma profundidade aproximada dos olhos.');
+  if(Math.abs(refMidY-eyeMidY)>pixelEye*1.25)warnings.push('A referência parece distante dos olhos na imagem; aproxime-a do plano dos olhos.');
+  if(pd<45||pd>85)warnings.push('A DP ficou fora da faixa comum para muitos adultos. Verifique a distância da referência e a posição dos marcadores.');
+  if(pixelRef<90||pixelEye<65)warnings.push('Poucos pixels para medição; prefira foto com mais resolução.');
+  if(Math.abs(dnpRight-dnpLeft)>7)warnings.push('Diferença relevante entre DNP direita e esquerda. Confira a posição do nariz e a orientação OD/OE.');
+  if(referenceMode()==='ruler')warnings.push('Régua: certifique-se de que a distância digitada corresponde exatamente às duas graduações marcadas, não ao tamanho total da régua.');
+  warnings.push('Confira se o olho direito (OD) está identificado corretamente como esquerda/direita da foto.');
+  warnings.push('A posição da raiz nasal, a perspectiva, a profundidade da referência e a convergência ocular podem causar erros de vários milímetros.');
+  return {pd,dnpRight,dnpLeft,pixelRef,pixelEye,realWidth,refMode:referenceMode(),roll,refAngle,warnings,mode:photoMode(),detection,clientName:$('clientName').value.trim(),date:new Date()};
+}
+$('calculate').addEventListener('click',()=>{
+  try{
+    lastMeasurement=measure();
+    $('pdValue').textContent=lastMeasurement.pd.toFixed(1).replace('.',',');
+    $('dnpRightValue').textContent=lastMeasurement.dnpRight.toFixed(1).replace('.',',');
+    $('dnpLeftValue').textContent=lastMeasurement.dnpLeft.toFixed(1).replace('.',',');
+    $('resultReference').textContent=(lastMeasurement.refMode==='card'?'Cartão padrão':'Régua')+' — '+lastMeasurement.realWidth.toFixed(1).replace('.',',')+' mm';
+    $('modeDescription').textContent=lastMeasurement.mode==='selfie'?'Estimativa em condição de perto (selfie)':'Estimativa com foto assistida (longe)';
+    $('resultMode').textContent=lastMeasurement.mode==='selfie'?'Selfie / perto':'Foto assistida / longe';
+    $('resultDetection').textContent=lastMeasurement.detection==='automatica'?'Detectadas automaticamente':'Revisadas / marcadas manualmente';
+    $('resultDate').textContent=lastMeasurement.date.toLocaleString('pt-BR',{dateStyle:'short',timeStyle:'short'});
+    $('qualityBox').innerHTML='';
+    const title=document.createElement('strong');title.textContent='Atenção — conferência necessária';$('qualityBox').append(title);
+    const intro=document.createElement('p');intro.textContent='Não use esta estimativa isoladamente para produzir lentes. Verifique os pontos e as condições da foto.';$('qualityBox').append(intro);
+    const ul=document.createElement('ul');
+    lastMeasurement.warnings.forEach(w=>{const li=document.createElement('li');li.textContent=w;ul.append(li);});
+    $('qualityBox').append(ul);
+    showSection('result');
+  }catch(err){showToast(err.message);}
+});
+function reportText(){
+  if(!lastMeasurement)return '';
+  const r=lastMeasurement;
+  return [
+    'ÓTICA GADELHAS — RESULTADO PRELIMINAR',
+    r.clientName?'Cliente: '+r.clientName:null,
+    'DP binocular estimada: '+r.pd.toFixed(1).replace('.',',')+' mm',
+    'DNP direita (OD) estimada: '+r.dnpRight.toFixed(1).replace('.',',')+' mm',
+    'DNP esquerda (OE) estimada: '+r.dnpLeft.toFixed(1).replace('.',',')+' mm',
+    'Tipo: '+(r.mode==='selfie'?'selfie/perto':'foto assistida/longe'),
+    'Pupilas: '+(r.detection==='automatica'?'localização automática':'revisão/marcação manual'),
+    'Referência: '+(r.refMode==='card'?'cartão padrão':'régua')+' com '+r.realWidth.toFixed(1).replace('.',',')+' mm entre marcas',
+    'Data: '+r.date.toLocaleString('pt-BR'),
+    '',
+    'IMPORTANTE: medida experimental não validada; precisa ser conferida pela ótica antes da fabricação de lentes. Inclui DNP estimadas, mas não inclui altura de montagem.'
+  ].filter(x=>x!==null).join('\n');
+}
+async function getReportFile(){
+  const blob=await new Promise(resolve=>photo.toBlob(resolve,'image/png'));
+  if(!blob)throw new Error('Não foi possível gerar a imagem marcada.');
+  return new File([blob], 'otica-gadelhas-medicao.png',{type:'image/png'});
+}
+async function shareReport(){
+  if(!lastMeasurement)return;
+  const text=reportText();
+  try{
+    if(navigator.share){
+      let data={title:'Estimativa de DP — Ótica Gadelhas',text};
+      try{
+        const f=await getReportFile();
+        if(navigator.canShare?.({files:[f]}))data={...data,files:[f]};
+      }catch(e){console.warn('Imagem indisponível para compartilhamento:',e);}
+      await navigator.share(data);return;
+    }
+    await copyReport();showToast('Resultado copiado. Cole na conversa com a ótica.');
+  }catch(err){if(err?.name!=='AbortError')showToast('Não foi possível compartilhar. Tente copiar o resultado.');}
+}
+async function copyReport(){
+  const text=reportText();
+  try{await navigator.clipboard.writeText(text);}catch(_){
+    const temp=document.createElement('textarea');temp.value=text;temp.style.position='fixed';temp.style.opacity='0';document.body.append(temp);temp.select();document.execCommand('copy');temp.remove();
+  }
+}
+$('shareResult').addEventListener('click',shareReport);
+$('copyResult').addEventListener('click',async()=>{await copyReport();showToast('Resultado copiado.');});
+$('waResult').addEventListener('click',()=>{
+  const url='https://api.whatsapp.com/send?text='+encodeURIComponent(reportText());
+  const win=window.open(url,'_blank','noopener,noreferrer');
+  if(!win)window.location.href=url;
+});
+$('downloadPhoto').addEventListener('click',()=>{
+  if(!lastMeasurement)return;
+  photo.toBlob(blob=>{
+    if(!blob)return showToast('Não foi possível gerar a imagem.');
+    const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='otica-gadelhas-medicao.png';a.click();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+  },'image/png');
+});
+$('backToEditor').addEventListener('click',()=>{showSection('editor');drawPhoto();syncMarkerButtons();});
+$('tryAgain').addEventListener('click',()=>{source.width=0;photo.width=0;showSection('intro');});
+window.addEventListener('pagehide',stopCamera);
+syncConsent();
+
+</script>
 </body>
 </html>
