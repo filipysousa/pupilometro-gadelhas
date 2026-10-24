@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b4d4b" />
+  <meta name="description" content="Estimativa remota de distância pupilar para conferência com a Ótica Gadelhas." />
+  <title>Pupilômetro Remoto | Ótica Gadelhas</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ótica Gadelhas, início">
+        <span class="brand-icon" aria-hidden="true">◎</span>
+        <span><strong>ÓTICA GADELHAS</strong><small>Atendimento remoto</small></span>
+      </a>
+      <span class="header-tag">Medição digital • Protótipo</span>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="live-dot"></span> Atendimento a distância</span>
+          <h1>Vamos estimar sua <em>distância pupilar?</em></h1>
+          <p>Com uma foto e um cartão de tamanho padrão, você pode preparar uma medida preliminar para enviar à nossa equipe.</p>
+          <div class="hero-points"><span>✓ Pelo celular</span><span>✓ Sem instalar aplicativo</span><span>✓ Foto processada no aparelho</span></div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="face-abstract"><span class="eye one"></span><span class="eye two"></span><span class="measure-line"></span><span class="middle-mark"></span></div>
+          <div class="hero-visual-label"><strong>DP</strong><span>Distância entre as pupilas</span></div>
+        </div>
+      </section>
+
+      <section class="notice essential" role="note">
+        <strong>Antes de começar</strong>
+        <p>Esta ferramenta fornece uma <b>estimativa experimental</b> e não substitui o pupilômetro, a avaliação de um óptico ou a conferência antes de fabricar as lentes. Para multifocais, graus elevados ou medições de montagem, a ótica precisa validar outras medidas.</p>
+      </section>
+
+      <nav class="progress" aria-label="Etapas da medição">
+        <span class="progress-item active" id="step1"><b>1</b> Preparar</span>
+        <span class="progress-divider"></span>
+        <span class="progress-item" id="step2"><b>2</b> Fotografar e marcar</span>
+        <span class="progress-divider"></span>
+        <span class="progress-item" id="step3"><b>3</b> Compartilhar</span>
+      </nav>
+
+      <section class="main-grid" id="introSection">
+        <div class="panel panel-primary">
+          <span class="section-label">ETAPA 01</span>
+          <h2>Prepare sua foto</h2>
+          <p class="muted">Você vai precisar de um cartão com tamanho padrão, como um cartão de plástico em branco, no formato bancário (largura de <b>85,60 mm</b>). <b>Não fotografe números, códigos ou outros dados de cartões de pagamento.</b></p>
+          <div class="guide-row"><span class="guide-num">01</span><div><b>Peça ajuda, se possível</b><p>Para lentes de longe, outra pessoa deve fotografar você de frente, na altura dos olhos, a cerca de 1,5 a 2 metros, com boa iluminação.</p></div></div>
+          <div class="guide-row"><span class="guide-num">02</span><div><b>Deixe o rosto reto</b><p>Olhe em direção à câmera, sem inclinar a cabeça e sem óculos escuros. Evite filtros de beleza e retrato.</p></div></div>
+          <div class="guide-row"><span class="guide-num">03</span><div><b>Posicione o cartão</b><p>Segure o cartão <b>horizontalmente, sobre a testa, bem próximo ao plano dos olhos</b>, sem tampar os olhos. A borda maior precisa aparecer inteira.</p></div></div>
+          <div class="guide-row"><span class="guide-num">04</span><div><b>Marque na imagem</b><p>Confirme os centros das duas pupilas e toque nas duas extremidades da <b>mesma borda longa</b> do cartão.</p></div></div>
+        </div>
+
+        <aside class="panel side-panel">
+          <span class="section-label">CONFIGURAÇÃO</span>
+          <h2>Iniciar medição</h2>
+          <label class="field-label" for="clientName">Nome do cliente <span>(opcional)</span></label>
+          <input type="text" id="clientName" maxlength="80" placeholder="Como podemos chamar você?" autocomplete="name" />
+          <div class="field-label">Como a foto será feita?</div>
+          <div class="choice-group" role="radiogroup" aria-label="Tipo de fotografia">
+            <label class="choice-card"><input type="radio" name="photoMode" value="distance" checked /><span><b>Com ajuda de outra pessoa</b><small>Recomendado para estimativa de DP de longe</small></span></label>
+            <label class="choice-card"><input type="radio" name="photoMode" value="selfie" /><span><b>Selfie, com o braço esticado</b><small>Medida com convergência para perto; não equivale à DP de longe</small></span></label>
+          </div>
+          <label class="consent"><input id="consent" type="checkbox" /><span>Entendo que é uma estimativa, autorizo o processamento local da foto e decidirei se quero compartilhar o resultado.</span></label>
+          <button id="startCamera" class="button button-primary" disabled><span aria-hidden="true">◉</span> Abrir câmera</button>
+          <div class="or-separator"><span>ou</span></div>
+          <label class="button button-outline file-button" id="uploadLabel" aria-disabled="true" for="fileInput"><span aria-hidden="true">↥</span> Usar foto da galeria</label>
+          <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp,image/heic,image/heif,image/*" class="sr-only" disabled />
+          <p class="quiet-text">A câmera funciona em sites HTTPS e no endereço localhost. A conexão é necessária para carregar o detector de olhos.</p>
+        </aside>
+      </section>
+
+      <section class="work-panel hidden" id="cameraSection">
+        <div class="work-title"><span class="section-label">ETAPA 02</span><h2>Enquadre o rosto e o cartão</h2><p>Mantenha o rosto centralizado, o cartão visível e a câmera na altura dos olhos.</p></div>
+        <div class="camera-frame"><video id="cameraVideo" autoplay playsinline muted></video><div class="camera-outline" aria-hidden="true"><div class="oval"></div></div></div>
+        <div class="action-row"><button class="button button-primary" id="takePhoto">Capturar foto</button><button class="button button-outline" id="stopCamera">Cancelar</button></div>
+      </section>
+
+      <section class="work-panel hidden" id="editorSection">
+        <div class="work-title"><span class="section-label">ETAPA 02</span><h2>Confira os pontos da imagem</h2><p>O detector tenta localizar as pupilas automaticamente. Para medir, marque também as duas pontas da <b>borda longa (85,60 mm)</b> do cartão.</p></div>
+        <div id="modelStatus" class="small-status" role="status" aria-live="polite">Preparando análise...</div>
+        <div class="editor-grid">
+          <div>
+            <div class="editor-canvas-wrap"><canvas id="photoCanvas" aria-label="Imagem da foto com as marcações. Toque para posicionar o ponto selecionado."></canvas></div>
+            <div class="photo-legend"><span><i class="legend-eye"></i> Centros das pupilas</span><span><i class="legend-card"></i> Bordas do cartão</span></div>
+            <p class="image-instruction">Toque na imagem para colocar o ponto selecionado. Use as setas para corrigir com precisão.</p>
+          </div>
+          <div class="marking-side">
+            <h3>Selecione o ponto</h3>
+            <div class="marker-buttons">
+              <button type="button" class="marker-button" data-marker="cardA"><span class="marker-gold">●</span> Cartão: ponta 1 <span class="marker-state" id="status-cardA">Pendente</span></button>
+              <button type="button" class="marker-button" data-marker="cardB"><span class="marker-gold">●</span> Cartão: ponta 2 <span class="marker-state" id="status-cardB">Pendente</span></button>
+              <button type="button" class="marker-button" data-marker="eyeA"><span class="marker-teal">●</span> Pupila 1 <span class="marker-state" id="status-eyeA">Pendente</span></button>
+              <button type="button" class="marker-button" data-marker="eyeB"><span class="marker-teal">●</span> Pupila 2 <span class="marker-state" id="status-eyeB">Pendente</span></button>
+            </div>
+            <div class="fine-adjust">
+              <span class="field-label">Ajuste fino <small>(1 px por toque)</small></span>
+              <canvas id="loupeCanvas" width="170" height="112" aria-label="Ampliação do ponto selecionado"></canvas>
+              <div class="nudge-grid"><span></span><button class="nudge" data-dx="0" data-dy="-1" aria-label="Subir um pixel">↑</button><span></span><button class="nudge" data-dx="-1" data-dy="0" aria-label="Esquerda um pixel">←</button><button class="nudge center" id="clearMarker" aria-label="Apagar ponto">×</button><button class="nudge" data-dx="1" data-dy="0" aria-label="Direita um pixel">→</button><span></span><button class="nudge" data-dx="0" data-dy="1" aria-label="Descer um pixel">↓</button><span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="action-row"><button class="button button-primary" id="calculate" disabled>Calcular DP estimada <span aria-hidden="true">→</span></button><button class="button button-outline" id="tryAgain">Escolher outra foto</button></div>
+      </section>
+
+      <section class="work-panel hidden" id="resultSection">
+        <div class="work-title"><span class="section-label">ETAPA 03</span><h2>Resultado preliminar</h2><p>Confira os números e encaminhe à ótica para revisão.</p></div>
+        <div class="result-grid">
+          <div class="result-feature"><span>DP binocular estimada</span><div><strong id="pdValue">--</strong><small>mm</small></div><p id="modeDescription">Medida preliminar</p></div>
+          <div class="result-details"><h3>Detalhes da medição</h3><dl><dt>Referência</dt><dd>Cartão padrão, 85,60 mm</dd><dt>Tipo de captura</dt><dd id="resultMode">—</dd><dt>Localização das pupilas</dt><dd id="resultDetection">—</dd><dt>Data</dt><dd id="resultDate">—</dd></dl><p class="disclaimer-mini">A DP monocular, altura de montagem e outras medidas para fabricar as lentes não são obtidas por este protótipo.</p></div>
+        </div>
+        <div class="quality-box" id="qualityBox"></div>
+        <div class="action-row action-wrap"><button class="button button-primary" id="shareResult">Compartilhar com a ótica</button><button class="button button-outline" id="waResult">Enviar texto pelo WhatsApp</button><button class="button button-outline" id="downloadPhoto">Baixar imagem marcada</button><button class="button button-outline" id="copyResult">Copiar resultado</button><button class="button button-quiet" id="backToEditor">Corrigir os pontos</button></div>
+      </section>
+      <div id="alertBox" class="toast hidden" role="status" aria-live="polite"></div>
+    </main>
+    <footer class="site-footer"><div><b>ÓTICA GADELHAS</b><small>Pupilômetro remoto • Protótipo experimental</small></div><p>Privacidade: a foto é analisada neste dispositivo; o aplicativo não possui servidor de armazenamento. Só é compartilhada se você escolher fazê-lo.</p></footer>
+  </div>
+  <script defer src="./app.js"></script>
+</body>
+</html>
